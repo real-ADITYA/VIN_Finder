@@ -1,5 +1,6 @@
 # VIN Finder Tool
 This project was created in CMSC335 (Spring 2025): Web Application Development with JavaScript by Aditya Eswaran.
+For adding VINs, you can use the following free website: [Random VINs](https://randomvin.com/)
 
 ## Contributions and Useful Links
 
