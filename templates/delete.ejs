@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delete All Vehicles</title>
+    <script>
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete ALL vehicles?");
+    }
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="main-container">
+    <h1>Delete All Stored Vehicles</h1>
+
+    <p>This will permanently remove all stored vehicle entries from the database.</p>
+
+    <form action="/delete" method="POST">
+        <button type="submit">Confirm Delete All</button>
+    </form>
+
+    <hr><a href="/">HOME</a>
+</div>
+</body>

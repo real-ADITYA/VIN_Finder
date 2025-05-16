@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Stored Vehicles</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="main-container">
+  <h1>Your Stored Vehicles</h1>
+    
+  <table border="1">
+    <tr>
+      <th>VIN</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Date Added</th>
+    </tr>
+    <% carsList.forEach(car => { %>
+    <tr>
+      <td><%= car.vin %></td>
+      <td><%= car.make %></td>
+      <td><%= car.model %></td>
+      <td><%= car.year %></td>
+      <td><%= new Date(car.addedAt).toLocaleString() %></td>
+    </tr>
+    <% }) %>
+  </table>
+
+  <div id="footer">
+    <p>Developed by: Aditya R. Eswaran</p>
+    <a href="/">Go Home</a>
+  </div>
+</div>
+</body>
